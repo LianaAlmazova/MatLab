@@ -19,11 +19,11 @@ end
 m = mm/k;
 n = nn/k;
 
-T = zeros(m,n);
+T = zeros(k,k);
 A = ones(m,n);
 
-for i = 1:mm-k-(m-2)
-    for j = 1:nn-k-(n-2)
+for i = 1:m
+    for j = 1:n
         q = 1+k*(i-1);
         b = 1+k*(j-1);
         T = D(q:q+k-1,b:b+k-1); 
